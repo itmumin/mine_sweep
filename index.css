@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,body,.wrapper {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.btn {
+    height: 140px;
+    width: 170px;
+    background-image: url("./images/startGame.png");
+    background-size: 100%;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.box {
+    display: none;
+    height: 500px;
+    width: 500px;
+    transform: perspective(800px) rotateX(30deg);
+    margin: 0 auto;
+    box-shadow:  2px 0 2px rgba(0, 0, 0, .5) inset, 2px 2px 2px rgba(0, 0, 0, .5);
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.flagBox {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    margin-left: -100px;
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+.alterBox {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.alterImg {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 400px;
+    background-image: url("./images/success.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-image: url("./images/closeBtn.png");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    cursor: pointer;
+}
+
+.block {
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000; 
+    background-image: url("./images/cao.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.block.num {
+    background: #fff;
+    font-size: 16rpx;
+    font-weight: bold;
+    line-height: 49px;
+    text-align: center;
+}
+
+.show {
+    display: inline-block;
+    background-image: url("./images/dilei.jpg");
+    background-size: 100%;
+}
+
+.sign {
+    background-image: url("./images/hongqi.jpg");
+}
